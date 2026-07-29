@@ -3,119 +3,241 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>George Vidat | Personal Website</title>
+<title>George Vidat | Personal Portfolio</title>
 
 <style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-background:#0f172a;
+background:#08111f;
 color:white;
 }
 
-header{
-padding:80px 20px;
-text-align:center;
-background:linear-gradient(135deg,#2563eb,#7c3aed);
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#0b1526;
+padding:18px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,.5);
 }
 
-header h1{
-font-size:50px;
-margin-bottom:15px;
+nav h2{
+color:#3b82f6;
 }
 
-header p{
-font-size:20px;
-opacity:.9;
-}
-
-.btn{
-display:inline-block;
-margin-top:25px;
-padding:14px 30px;
-background:white;
-color:#2563eb;
+nav a{
+color:white;
 text-decoration:none;
+margin-left:20px;
+}
+
+.hero{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:center;
+padding:120px 20px 80px;
+}
+
+.hero img{
+width:320px;
+border-radius:20px;
+box-shadow:0 0 30px #2563eb;
+margin:20px;
+}
+
+.text{
+max-width:500px;
+padding:20px;
+}
+
+.text h1{
+font-size:55px;
+color:#3b82f6;
+}
+
+.text h3{
+margin:15px 0;
+font-weight:normal;
+}
+
+button{
+padding:14px 30px;
+border:none;
 border-radius:30px;
-font-weight:bold;
+background:#2563eb;
+color:white;
+font-size:16px;
+margin-top:20px;
+cursor:pointer;
 }
 
 section{
-padding:60px 20px;
-max-width:900px;
+padding:70px 20px;
+max-width:1000px;
 margin:auto;
 }
 
 .card{
-background:#1e293b;
-padding:25px;
-border-radius:15px;
+background:#101b2d;
+padding:30px;
+border-radius:20px;
 margin-top:20px;
+box-shadow:0 0 15px rgba(0,0,0,.3);
+}
+
+h2{
+color:#3b82f6;
+margin-bottom:20px;
 }
 
 footer{
+background:#0b1526;
 text-align:center;
-padding:30px;
-background:#111827;
+padding:25px;
+margin-top:50px;
+}
+
+a.email{
+color:#60a5fa;
+text-decoration:none;
 }
 </style>
+
 </head>
 
 <body>
 
-<header>
-<h1>George Vidat</h1>
-<p>Technology Enthusiast • Web Developer • Future Innovator</p>
+<nav>
+<h2>George Vidat</h2>
 
-<a class="btn" href="#about">Learn More</a>
-</header>
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+<div class="hero">
+
+<img src="profile.jpg" alt="George Vidat">
+
+<div class="text">
+
+<h1>George Vidat</h1>
+
+<h3>Technology Enthusiast • Web Developer • Future Innovator</h3>
+
+<p>
+Welcome to my personal website.
+I'm passionate about technology, learning new skills and building websites that solve real-world problems.
+</p>
+
+<button onclick="location.href='#contact'">
+Contact Me
+</button>
+
+</div>
+
+</div>
 
 <section id="about">
+
 <div class="card">
+
 <h2>About Me</h2>
-<br>
-<p>Hello! I'm George Vidat. I enjoy learning new technologies, creating websites, and building digital projects. My goal is to become a skilled developer and create solutions that help people.</p>
+
+<p>
+
+Hello! I'm George Vidat.
+
+I enjoy web development, programming and learning modern technology.
+
+This website showcases my journey, skills and future projects.
+
+</p>
+
 </div>
+
 </section>
 
-<section>
+<section id="skills">
+
 <div class="card">
+
 <h2>Skills</h2>
-<br>
+
 <ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>GitHub Pages</li>
-<li>Learning JavaScript</li>
+
+<li>✔ HTML</li>
+
+<li>✔ CSS</li>
+
+<li>✔ GitHub</li>
+
+<li>✔ Learning JavaScript</li>
+
 </ul>
+
 </div>
+
 </section>
 
-<section>
+<section id="projects">
+
 <div class="card">
+
 <h2>Projects</h2>
-<br>
-<p>🚀 Personal Website</p>
-<p>🌐 More exciting projects coming soon.</p>
+
+<p>🚀 Personal Portfolio Website</p>
+
+<p>More exciting projects coming soon...</p>
+
 </div>
+
 </section>
 
-<section>
+<section id="contact">
+
 <div class="card">
-<h2>Contact</h2>
-<br>
-<p>Email: your-email@example.com</p>
+
+<h2>Contact Me</h2>
+
+<p>Email:</p>
+
+<p>
+
+<a class="email" href="mailto:georgevidat001@gmail.com">
+
+georgevidat001@gmail.com
+
+</a>
+
+</p>
+
 </div>
+
 </section>
 
 <footer>
-© 2026 George Vidat. All Rights Reserved.
+
+© 2026 George Vidat • All Rights Reserved
+
 </footer>
 
 </body>
+
 </html>
