@@ -116,3 +116,25 @@ h2{
     height:140px;
   }
 }
+footer{
+    background:#08111f;
+    text-align:center;
+    padding:40px 20px;
+    margin-top:60px;
+    border-top:1px solid #1e3a8a;
+}
+
+.socials{
+    margin-top:15px;
+}
+
+.socials a{
+    color:#60a5fa;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.socials a:hover{
+    color:white;
+}
